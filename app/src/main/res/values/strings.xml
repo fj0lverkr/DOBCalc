@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DOBCalc</string>
+    <string name="calculate_your_caps">CALCULATE YOUR</string>
+    <string name="in_minutes_caps">IN MINUTES</string>
+    <string name="age_caps">AGE</string>
+    <string name="select_date_caps">SELECT DATE</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="in_minutes">In Minutes until Date</string>
 </resources>
