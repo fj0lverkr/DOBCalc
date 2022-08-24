@@ -28,8 +28,7 @@ class MainActivity : AppCompatActivity() {
         val y = cal.get(Calendar.YEAR)
         val m = cal.get(Calendar.MONTH)
         val d = cal.get(Calendar.DAY_OF_MONTH)
-
-        DatePickerDialog(this,
+        val dpd = DatePickerDialog(this,
             { _, year, month, dayOfMonth ->
                 //note months start from 0, add 1.
                 val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
@@ -46,6 +45,8 @@ class MainActivity : AppCompatActivity() {
                 calculatedMinutesTV?.text = diff
 
         }
-            , y, m, d).show()
+            , y, m, d)
+        dpd.datePicker.maxDate = cal.timeInMillis
+        dpd.show()
     }
 }
